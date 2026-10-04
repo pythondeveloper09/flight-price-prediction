@@ -1,32 +1,33 @@
 # ✈️ Flight Price Prediction
 
-A Machine Learning based web application that predicts flight ticket prices based on flight details such as airline, source, destination, travel class, departure time, arrival time, number of stops, and travel duration.
+A Machine Learning based web application that predicts flight ticket prices based on different flight-related features such as airline, source, destination, travel class, departure time, arrival time, number of stops, and travel duration.
 
-The application is built using **Python, Scikit-learn, Random Forest Regression, and Streamlit**.
+The project uses a **Decision Tree Regression model** and provides an interactive web interface using **Streamlit**.
 
 ---
 
 ## 🚀 Project Overview
 
-Flight ticket prices depend on multiple factors such as:
+Flight ticket prices depend on several factors, including:
 
 - Airline
-- Departure and arrival locations
+- Departure city
+- Arrival city
 - Travel class
 - Departure time
 - Arrival time
 - Number of stops
-- Total travel duration
+- Travel duration
 
-This project uses historical flight data to train a **Random Forest Regression model** and provides an interactive Streamlit application for predicting the estimated flight price.
+This project uses historical flight data to train a **Decision Tree Regressor** and deploys the trained model through a Streamlit application.
 
 ---
 
 ## 🎯 Problem Statement
 
-To develop a machine learning regression model that can estimate flight ticket prices based on different flight-related features.
+To build a Machine Learning regression model that can predict the estimated price of a flight based on its travel and flight-related characteristics.
 
-The trained model is deployed through a simple and user-friendly **Streamlit web application**.
+The trained Decision Tree model is integrated with a Streamlit web application to provide real-time flight price predictions.
 
 ---
 
@@ -36,7 +37,7 @@ The trained model is deployed through a simple and user-friendly **Streamlit web
 - Pandas
 - NumPy
 - Scikit-learn
-- Random Forest Regressor
+- Decision Tree Regressor
 - Streamlit
 - Pickle
 
@@ -44,7 +45,9 @@ The trained model is deployed through a simple and user-friendly **Streamlit web
 
 ## 📊 Dataset
 
-The project uses flight price data containing information about:
+The project uses flight price datasets containing information related to Business and Economy class flights.
+
+The dataset contains features such as:
 
 - Date
 - Airline
@@ -59,7 +62,7 @@ The project uses flight price data containing information about:
 - Flight Class
 - Price
 
-The Business and Economy datasets were combined during the data preparation process.
+Business and Economy datasets were combined during the data preparation process.
 
 ---
 
@@ -78,7 +81,7 @@ Categorical Encoding
        ↓
 Train-Test Split
        ↓
-Random Forest Regression
+Decision Tree Regression
        ↓
 Model Evaluation
        ↓
